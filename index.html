@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rahul Trading Worlds</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
+  <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '456637037002047');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=456637037002047&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+  
+</head>
+
+<body>
+  <!-- Snow Effect Container -->
+  <div id="snow"></div>
+  <div class="hero">
+    <div class="conent">
+      <h1 class="heading1">RAHUL TRADING WORLDS</h1>
+      <h2 class="h2">Best colour Prediction</h2>
+    </div>
+    <br />
+    <div class="counter">Free Joining Ends In</div>
+    <br />
+    <br />
+    <br />
+    <div class="timer" id="countdown">1:00</div>
+    <br />
+    <br />
+    <div class="content-wrapper">
+      <div class="points">
+        <ul>
+          <li><i class="fa-solid fa-share"></i> 100% Winning Prediction </li>
+          <li><i class="fa-solid fa-share"></i> Sure Shot Prediction </li>
+          <li><i class="fa-solid fa-share"></i> Gurantee Winning</li>
+        </ul>
+      </div>
+    </div>
+    <div class="button">
+      <a href="https://t.me/+lcW5CmwN_eViZjU1" class="btn btn--stripe">SUBSCRIBE FOR FREE <i
+          class="fa-brands fa-telegram " aria-hidden="true"></i></a>
+    </div>
+
+    <footer>
+      &copy; 2024 PREDICTION RAHUL TRADING 
+    </footer>
+  </div>
+</body>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var script = document.createElement('script');
+    script.src = 'https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js';
+    script.onload = function () {
+      particlesJS("snow", {
+        "particles": {
+          "number": {
+            "value": 200,
+            "density": {
+              "enable": true,
+              "value_area": 800
+            }
+          },
+          "color": {
+            "value": "#ffffff"
+          },
+          "opacity": {
+            "value": 0.7,
+            "random": false,
+            "anim": {
+              "enable": false
+            }
+          },
+          "size": {
+            "value": 5,
+            "random": true,
+            "anim": {
+              "enable": false
+            }
+          },
+          "line_linked": {
+            "enable": false
+          },
+          "move": {
+            "enable": true,
+            "speed": 5,
+            "direction": "bottom",
+            "random": true,
+            "straight": false,
+            "out_mode": "out",
+            "bounce": false,
+            "attract": {
+              "enable": true,
+              "rotateX": 300,
+              "rotateY": 1200
+            }
+          }
+        },
+        "interactivity": {
+          "events": {
+            "onhover": {
+              "enable": false
+            },
+            "onclick": {
+              "enable": false
+            },
+            "resize": false
+          }
+        },
+        "retina_detect": true
+      });
+    }
+    document.head.append(script);
+  });
+
+
+  let remainingSeconds = 60;
+
+  function updateCountdown() {
+    document.getElementById("countdown").innerHTML = `${remainingSeconds}`;
+    remainingSeconds -= 1;
+
+    if (remainingSeconds < 0) {
+      remainingSeconds = 60;
+    }
+  }
+
+  updateCountdown();
+  const countdownInterval = setInterval(updateCountdown, 1000);
+</script>
+
+</html>
