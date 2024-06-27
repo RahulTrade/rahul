@@ -63,6 +63,22 @@ src="https://www.facebook.com/tr?id=456637037002047&ev=PageView&noscript=1"
           class="fa-brands fa-telegram " aria-hidden="true"></i></a>
     </div>
 
+    <script>
+  let remainingSeconds = 60;
+
+  function updateCountdown() {
+    document.getElementById("countdown").innerHTML = `${remainingSeconds}`;
+    remainingSeconds -= 1;
+
+    if (remainingSeconds < 0) {
+      remainingSeconds = 60;
+    }
+  }
+
+  updateCountdown();
+  const countdownInterval = setInterval(updateCountdown, 1000);
+</script>
+    
     <footer>
       &copy; 2024 PREDICTION RAHUL TRADING 
     </footer>
